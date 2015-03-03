@@ -317,7 +317,7 @@
 			name = DelaunayTests;
 			productName = DelaunayTests;
 			productReference = 834DEA211356705A000191D9 /* DelaunayTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -325,6 +325,7 @@
 		834DEA0B1356705A000191D9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "ZWorkbench, Inc.";
 			};
 			buildConfigurationList = 834DEA0E1356705A000191D9 /* Build configuration list for PBXProject "Delaunay" */;
@@ -443,15 +444,16 @@
 		834DEA351356705A000191D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -459,9 +461,9 @@
 		834DEA361356705A000191D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
@@ -476,6 +478,7 @@
 				DSTROOT = /tmp/Delaunay.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Delaunay/Delaunay-Prefix.pch";
+				GCC_VERSION = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -488,6 +491,7 @@
 				DSTROOT = /tmp/Delaunay.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Delaunay/Delaunay-Prefix.pch";
+				GCC_VERSION = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -503,6 +507,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DelaunayTests/DelaunayTests-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "DelaunayTests/DelaunayTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -523,6 +528,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DelaunayTests/DelaunayTests-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "DelaunayTests/DelaunayTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
